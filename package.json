@@ -1,0 +1,19 @@
+{
+    "version": "0.0.4",
+    "name": "com.acme.plugin.alert",
+    "cordova_name": "Alert",
+    "description": "hello-word cordova plugin",
+    "license": "free",
+    "repo": "https://github.com/DenniLa2/helloPlugin.git",
+    "issue": "hhttps://github.com/DenniLa2/helloPlugin",
+    "keywords": [
+        "Cordova",
+        "Plugin",
+        "helloWord"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": []
+}

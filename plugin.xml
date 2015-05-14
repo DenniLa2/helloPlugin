@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.acme.plugin.alert"
-        version="0.0.3">
+        version="0.0.4">
 
   <name>Alert</name>
   <description>A Cordova plugin that displays an alert popup dialog</description>
   <repo>https://github.com/DenniLa2/helloPlugin.git</repo>
+  <license>free</license>
+  <keywords>plugin, cordova</keywords>
+  <issue>https://github.com/DenniLa2/helloPlugin</issue>
+
   <engines>
     <engine name="cordova" version=">=3.6.0" />
   </engines>
