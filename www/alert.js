@@ -4,6 +4,6 @@ module.exports = {
       null, // no callback
       "Alert",
       "alert",
-      [title, message, buttonLable]);
+      [title, message, buttonLabel]);
   }
 };
