@@ -21,6 +21,9 @@ public class Alert extends CordovaPlugin {
         if (action.equals("alert")) {
             alert(args.getString(0), args.getString(1), args.getString(2), callbackContext);
             return true;
+        } else if (action.equals("alert2")) {
+            alert2(args.getString(0), args.getString(1), args.getString(2), callbackContext);
+            return true;
         }
         return false;
     }
@@ -42,4 +45,24 @@ public class Alert extends CordovaPlugin {
         .create()
         .show();
     }
+    
+    private synchronized void alert2(final String title,
+                                    final String message,
+                                    final String buttonLabel,
+                                    final CallbackContext callbackContext) {
+        new AlertDialog.Builder(cordova.getActivity())
+        .setTitle(title)
+        .setMessage(message)
+        .setCancelable(true)
+        .setNeutralButton(buttonLabel, new AlertDialog.OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int which) {
+                dialogInterface.dismiss();
+                callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, 0));
+            }
+        })
+        .create()
+        .show();
+    }
+    
+    
 }
