@@ -58,6 +58,7 @@ public class Alert extends CordovaPlugin {
             public void onClick(DialogInterface dialogInterface, int which) {
                 dialogInterface.dismiss();
                 callbackContext.success("Hello, WORD!");
+                callbackContext.error("case error!");
             }
         })
         .create()

@@ -10,7 +10,7 @@ module.exports = {
 
   alert2: function (title, message, buttonLabel, successCallback) {
     var params = [title, message, buttonLabel];
-    return cordova.exec(
+    cordova.exec(
       successCallback,
       null, // no callback
       "Alert",
