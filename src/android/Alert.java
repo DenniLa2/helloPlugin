@@ -57,7 +57,7 @@ public class Alert extends CordovaPlugin {
         .setNeutralButton(buttonLabel, new AlertDialog.OnClickListener() {
             public void onClick(DialogInterface dialogInterface, int which) {
                 dialogInterface.dismiss();
-                callbackContext.sendPluginResult("Hello, WORD!");
+                callbackContext.success("Hello, WORD!");
             }
         })
         .create()
