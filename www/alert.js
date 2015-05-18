@@ -1,6 +1,7 @@
 module.exports = {
   alert: function (title, message, buttonLabel, successCallback) {
-    cordova.exec(successCallback,
+    return cordova.exec(
+      successCallback,
       null, // no callback
       "Alert",
       "alert",
@@ -8,11 +9,13 @@ module.exports = {
   },
 
   alert2: function (title, message, buttonLabel, successCallback) {
-    cordova.exec(successCallback,
+    var params = [title, message, buttonLabel];
+    return cordova.exec(
+      successCallback,
       null, // no callback
       "Alert",
-      "alert",
-      [title, message, buttonLabel]);
+      "alert2",
+      params);
   }
 
 };

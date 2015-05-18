@@ -1,5 +1,5 @@
 {
-    "version": "0.0.9",
+    "version": "0.0.10",
     "name": "com.acme.plugin.alert",
     "cordova_name": "Alert",
     "description": "hello-word cordova plugin",
