@@ -14,14 +14,14 @@
     <engine name="cordova" version=">=3.6.0" />
   </engines>
 
-  <js-module src="www/alert.js" name="Alert">
-    <clobbers target="Alert" />
+  <js-module src="www/camera.js" name="Photo">
+    <clobbers target="Photo" />
   </js-module>
 
   <!-- android -->
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Alert">
+      <feature name="Photo">
         <param name="android-package" value="com.getface.plugin.camera.Photo" />
       </feature>
     </config-file>
