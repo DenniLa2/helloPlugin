@@ -1,20 +1,20 @@
 module.exports = {
-  alert: function (title, message, buttonLabel, successCallback) {
+  cam1: function (title, message, buttonLabel, successCallback) {
     return cordova.exec(
       successCallback,
       null, // no callback
-      "Alert",
-      "alert",
+      "Photo",
+      "cam1",
       [title, message, buttonLabel]);
   },
 
-  alert2: function (title, message, buttonLabel, successCallback) {
+  cam2: function (title, message, buttonLabel, successCallback) {
     var params = [title, message, buttonLabel];
     cordova.exec(
       successCallback,
       null, // no callback
-      "Alert",
-      "alert2",
+      "Photo",
+      "cam2",
       params);
   }
 

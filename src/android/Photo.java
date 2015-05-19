@@ -18,17 +18,17 @@ public class Alert extends CordovaPlugin {
     
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext)
     throws JSONException {
-        if (action.equals("alert")) {
+        if (action.equals("cam1")) {
             alert(args.getString(0), args.getString(1), args.getString(2), callbackContext);
             return true;
-        } else if (action.equals("alert2")) {
+        } else if (action.equals("cam2")) {
             alert2(args.getString(0), args.getString(1), args.getString(2), callbackContext);
             return true;
         }
         return false;
     }
     
-    private synchronized void alert(final String title,
+    private synchronized void cam1(final String title,
                                     final String message,
                                     final String buttonLabel,
                                     final CallbackContext callbackContext) {
@@ -46,7 +46,7 @@ public class Alert extends CordovaPlugin {
         .show();
     }
     
-    private synchronized void alert2(final String title,
+    private synchronized void cam2(final String title,
                                     final String message,
                                     final String buttonLabel,
                                     final CallbackContext callbackContext) {

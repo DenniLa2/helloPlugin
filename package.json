@@ -1,6 +1,6 @@
 {
-    "version": "0.0.14",
-    "name": "com.acme.plugin.alert",
+    "version": "0.0.15",
+    "name": "com.getface.plugin.camera",
     "cordova_name": "Alert",
     "description": "hello-word cordova plugin",
     "license": "free",
