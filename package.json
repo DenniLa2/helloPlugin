@@ -1,7 +1,7 @@
 {
     "version": "0.0.15",
     "name": "com.getface.plugin.camera",
-    "cordova_name": "Alert",
+    "cordova_name": "Photo",
     "description": "hello-word cordova plugin",
     "license": "free",
     "repo": "https://github.com/DenniLa2/helloPlugin.git",
