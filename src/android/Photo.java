@@ -1,4 +1,4 @@
-package com.acme.plugin.alert;
+package com.getface.plugin.camera;
 
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -12,17 +12,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Alert extends CordovaPlugin {
+public class Photo extends CordovaPlugin {
     protected void pluginInitialize() {
     }
     
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext)
     throws JSONException {
         if (action.equals("cam1")) {
-            alert(args.getString(0), args.getString(1), args.getString(2), callbackContext);
+            cam1(args.getString(0), args.getString(1), args.getString(2), callbackContext);
             return true;
         } else if (action.equals("cam2")) {
-            alert2(args.getString(0), args.getString(1), args.getString(2), callbackContext);
+            cam2(args.getString(0), args.getString(1), args.getString(2), callbackContext);
             return true;
         }
         return false;
